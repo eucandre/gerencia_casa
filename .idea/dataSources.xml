@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2057301405">
+    <data-source source="LOCAL" name="Django default" uuid="5167f5fe-7ec8-4be0-bf4b-afc77ea02ea5">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\gerencia_casa\gerencia_casa.db</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
