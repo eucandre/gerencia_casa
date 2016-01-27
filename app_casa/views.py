@@ -10,8 +10,12 @@ def pagina_inicial(request):
     nome_saida = ""
     if tamanho_despesas ==0:
         nome_saida = "Nada"
+        valor = 0
+    else:
+        obj_despesa = saidas.objects.get(pk=tamanho_despesas)
+        nome_despesa = obj_despesa.nome_saida
     return render_to_response("arquivos_para_sistema/pagina_apresentacao.html",
-        {"tamanho1":tamanho_receitas, "saida":nome_saida},
+        {"valor":valor, "saida":nome_saida},
                               context_instance=RequestContext(request))
 
 def receita_casa(request):
