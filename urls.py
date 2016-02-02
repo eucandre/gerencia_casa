@@ -15,6 +15,10 @@ urlpatterns = patterns('',
     url(r'^despesas/$','app_casa.views.despesas_casa'),
     url(r'^em_caixa/$','app_casa.views.caixa'),
     # Uncomment the admin/doc line below to enable admin documentation:
+
+    (r'^login/$',"django.contrib.auth.views.login",{"template_name":"login.html"}),
+    (r'^logout/$',"django.contrib.auth.views.logout_then_login",{"login_url":"/"}),
+
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
